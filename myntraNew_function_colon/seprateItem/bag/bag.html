@@ -1,0 +1,114 @@
+<?php
+    session_start();
+    if (!array_key_exists('name',$_SESSION) || $_SESSION['name'] == '') {
+        
+            header( 'Location: login_new.html');
+           // die();
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Myntra Functional Clone</title>
+    <link rel="stylesheet" href="bag.css">
+    <link rel="stylesheet" href="../itemContainer.css">
+    <link rel="stylesheet" href="../../css_new.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header style="position: relative;">
+        <div class="logo-container">
+            <a href="#"><img class="myntra-home" height="70px" src="../../image/logoBanar/s.webp" alt="Myntra Home"></a>
+        </div>
+        <nav class="nav-bar">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Home & Living</a>
+            <a href="#">Beauty</a>
+            <a href="#">Studio <sup>New</sup></a>
+        </nav>
+        <div class="search-bar">
+            <span class="material-symbols-outlined search-icon">search</span>
+            <input class="search-input" placeholder="Search for products, brands and more">
+        </div>
+        <div class="action-bar">
+            <div class="action-container">
+                <span class="material-symbols-outlined action_icon">person</span>
+                <span class="action_name">Profile</span>
+            </div>
+
+            <div class="action-container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
+
+            <div class="action-container">
+                <span style="color:#551a8b;" class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name"><a class="action_name" href="#">bag</a></span>
+                <span class="bag-item-count">0</span>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="bag-page">
+            <div class="bag-items-container">
+              
+    
+            </div>
+            <div class="bag-summary">
+       
+            </div>
+    
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="copyRight">
+            © 2023 www.myntra.com. All rights reserved.
+        </div>
+    </footer>
+    <script src="../itemContainer.js"></script>
+    <script src="bag.js"></script>
+</body>
+</html>
