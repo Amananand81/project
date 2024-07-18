@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  </head>
+  <body >
+    	<center><h1>online student registration form</h1> </center>
+	<div class="container">
+		<form action=" " name="Onlinestudentreg" id="Onlinestudentreg" method="get" enctype="">
+			 <div class="row">
+                		<div class="col-sm-4">
+                    			<label for="fname"><b>Enter First Name</b></lable>
+                        		<input type="text" name="first_name" id="fname" placeholder="enter first name">
+             		   	</div>
+               	 		<div class="col-sm-4">
+                    			<label for="mname"><b>Enter Middel Name</b></lable>
+                        		<input type="text" name="midde_lname" id="mname" placeholder="enter middle name">
+                		</div>
+                		<div class="col-sm-4">
+                    			<label for="lname"><b>Enter last Name</b></lable>
+                        		<input type="text" name="last_name" id="lname" placeholder="enter last name">
+                		</div>
+            		</div><br>
+	    		<div class="row">
+				<div class="col-md-4">
+					<label for="email"><b> email address:</b></label>
+					<input type="email" name="email" id="email" placeholder="Enter email address">
+				</div>
+				<div class="col-md-4">
+					<label for="phonenumber"><b> phone no:</b></label>
+					<input type="number" name="phonenumber" id="phonenumber" placeholder="enter phone number">
+				</div>
+				<div class="col-md-4">
+					<label for="address"><b> address:</b></label>
+					<input type="text" name="address" id="address" placeholder="Enter address">
+				</div>
+	    		</div><br>
+	    		<div class="row">
+				<div class="col-md-3">
+					<label for="country"><b> country:</b></label>
+					<input type="text" name="country" id="country" placeholder="Enter country">
+				</div>
+				<div class="col-md-3">
+					<label for="state"><b> state:</b></label>
+					<input type="text" name="state" id="state" placeholder="enter state">
+				</div>
+				<div class="col-md-3">
+					<label for="city"><b>city:</b></label>
+					<input type="text" name="city" id="city" placeholder="Enter city">
+				</div>
+				<div class="col-md-3">
+					<label for="pincode"><b>pin code:</b></label>
+					<input type="text" name="pin_code" id="pincode" placeholder="enter pin code">
+				</div>
+	    		</div><br>
+	    		<div class="row">
+				<div class="col-md-3">
+					<label for="gendermale"><b>gender:</b></label><br>
+					<input type="radio" name="gender" id="gendermale" value="m">male<br>
+					<input type="radio" name="gender" id="genderfemale" value="f">female<br>
+					<input type="radio" name="gender" id="other" value="o">other<br>
+				</div>
+				<div class="col-md-3">
+					<label for="ridding"><b>hobbies:</b></label><br>
+					<input type="checkbox" name="readbook" id="readbook" value="readbook">reading<br>
+					<input type="checkbox" name="ridding" id="ridding" value="ridding">ridding<br>
+					<input type="checkbox" name="playing" id="playing" value="playing">playing<br>
+				</div>
+				<div class="col-md-6">
+				<textarea id="comment" name="comment" placeholder="comment" rows="4" cols="30"></textarea>
+				</div>
+	    		</div><br>
+	    		<div class="row">
+				<div class="col-md-3">
+					<label for="dob"><b>D.O.B</b></label>
+					<input type="date" name="dob" id="dob" placeholder="enter date of birth">
+				</div>	
+				<div class="col-md-3">
+					<label for="month"> <b>month:</b> </label>
+					<input type="month" name="month" id="month" />
+				</div>
+				<div class="col-md-3">
+					<label for="week"><b>week:</b> </label>
+					<input type="week" name="week" id="week" />
+				</div>
+	    		</div><br>
+	    		<div class="row">
+				<div class="col-md-4">
+					<label for="aadhaar"><b>aadhaar number:</b></label>
+					<input type="number" name="aadhaar" id="aadhar" placeholder="enter aadhaar no." width="50">
+				</div>	
+				<div class="col-md-4">
+					<label for="verify_aadhaar"><b>verify aadhaar number:</b></label>
+					<input type="number" name="verify_aadhaar" id="verify_aadhaar" placeholder="enter aadhaar no.">
+				</div>	
+	     		</div><br>
+	     		<div class="row">
+				<div class="col-md-4">	
+					<b>*Marticular(10th class)Examination details:</b><br><br>	
+					<label for="roll"><b>1.Roll Number:</b></label>
+					<input type="number" name="roll" id="roll" placeholder="enter roll "/>	<br><br>
+					<label for="pass_year"><b>2pass year:</b></label>
+					<input type="number" name="pass_year" id="pass _year" placeholder="enter pass year "/><br><br>
+					<label for="marks">3.<b>marks:</b></label>
+					<input type="number" name="marks" id="marks" placeholder="enter marks "/><br><br>
+					<label for="10 board"><b>4.Educational Board:</b></label>
+					<select name="10_board" id="board">
+						<option value="bihar_board">bihar board</option>
+						<option value="cbse_board">cbse board</option>
+						<option value="maharastra_board">maharastra board</option>
+						<option value="bengal_board">bengal board</option><br>
+					</select><br>
+					<label for="10th_cerificate"><b>5.uplode 10th marks sheet</b></label>
+					<input type="file" name="10th_marks_sheet" id="file" />
+				</div>	
+				<div class="col-md-4">	
+					<b>*Intermediate (12th class)Examination details:</b><br><br>	
+					<label for="roll"><b>1.Roll Number:</b></label>
+					<input type="number" name="roll" id="roll" placeholder="enter roll "/>	<br><br>
+					<label for="pass_year"><b>2pass year:</b></label>
+					<input type="number" name="pass_year" id="pass_year" placeholder="enter pass year "/><br><br>
+					<label for="marks">3.<b>marks:</b></label>
+					<input type="number" name="marks" id="marks" placeholder="enter_marks "/><br><br>
+					<label for="12_board"><b>4.Educational Board:</b></label>
+					<select name="12_board" id="board">
+						<option value="bihar-board">bihar board</option>
+						<option value="cbse-board">cbse board</option>
+						<option value="maharastra-board">maharastra board</option>
+						<option value="bengal-board">bengal board</option>
+					</select>
+					<label for="12th_cerificate"><b>5.uplode 10th marks sheet</b></label>
+					<input type="file" name="12th_marks_sheet" id="12th_cerificate" />
+				</div>
+			</div><br>	
+			<div class="row">
+				<div class="col-md-1">
+					<input type="button" name="button" id="button" value="save" />
+				</div>
+				<div class="col-md-1">
+					<input type="reset"/>
+				</div>
+				<div class="col-md-1">
+					<input type="submit" name="submit" id="submit"> 	
+				</div>
+			</div>
+        	</form>
+	</div>
+  </body>
+  <style>
+	body
+	{
+		background-color :powderblue;
+	}
+	h1
+	{
+		color: gray;
+	}
+   </style>
+</html>
